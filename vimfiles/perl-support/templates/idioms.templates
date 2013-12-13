@@ -32,7 +32,7 @@ sub |?FUNCTION_NAME| {
 print "<CURSOR>\n";
 == Idioms.open input file == map:ii, sc:i ==
 my	$|?FILEPOINTER|_in = "<CURSOR>";
-open  my $|FILEPOINTER|, '<', $|FILEPOINTER|_in or die "cannot open\n";
+open  my $|FILEPOINTER|, '<', $|FILEPOINTER|_in or die "Fail open $|FILEPOINTER|_in file\n";
 while(my $line=<$|FILEPOINTER|>)
 {
 		chomp $line;
@@ -41,7 +41,7 @@ close  $|FILEPOINTER|;
 
 == Idioms.open output file == map:io, sc:o ==
 my	$|?FILEPOINTER|_out = "<CURSOR>";
-open  my $|FILEPOINTER|, '>', $|FILEPOINTER|_out or die  "failed open$!\n";
+open  my $|FILEPOINTER|, '>', $|FILEPOINTER|_out or die  "Fail open $|FILEPOINTER|_out\n";
 close  $|FILEPOINTER|;
 
 == Idioms.open pipe == map:ipi, sc:p ==

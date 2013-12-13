@@ -55,19 +55,18 @@
  7:    具体的内容如下：
  8:  
  ```
- 9:  = Idioms.open input file == map:ii, sc:i ==
-10:  my      $|?FILEPOINTER|_in = "<CURSOR>";
-11:  open  my $|FILEPOINTER|, '<', $|FILEPOINTER|_in or die "cannot open\n";
-12:  while(my $line = <$in>)
-		 {
-					chomp $line;
-		 }
-12:  close  $|FILEPOINTER|;
-13:  
-14:  == Idioms.open output file == map:io, sc:o ==
-15:  my      $|?FILEPOINTER|_out = "<CURSOR>";
-16:  open  my $|FILEPOINTER|, '>', $|FILEPOINTER|_out or die  "cannot open$!\n";
-17:  close  $|FILEPOINTER|;
+13: == Idioms.open input file == map:ii, sc:i ==
+my	$|?FILEPOINTER|_in = "<CURSOR>";
+open  my $|FILEPOINTER|, '<', $|FILEPOINTER|_in or die "Fail open $|FILEPOINTER|_in file\n";
+while(my $line=<$|FILEPOINTER|>)
+{
+		chomp $line;
+}
+
+== Idioms.open output file == map:io, sc:o ==
+my	$|?FILEPOINTER|_out = "<CURSOR>";
+open  my $|FILEPOINTER|, '>', $|FILEPOINTER|_out or die  "Fail open $|FILEPOINTER|_out\n";
+close  $|FILEPOINTER|;
 ```
 这里只是根据我自己的喜好来修改的，大家知道怎么修改了以后完全可以自己折腾。 这样就可以了，不用搞的太复杂。让人看起来头晕。
 
