@@ -104,11 +104,29 @@ use utf8
 
 ##  常用perl-support快捷键总结
 这里面的快捷键都上百了，是在记忆有限，所以还是找了几个常用的，记录下来， 作为参考
+### \i 系列:in
 ```
-\cfr	添加注释
-\ip	print "\n";
-\io \ii	open
+\ip	# print "\n";
+\io # 新建一个输出句柄 
+\ii	# 新建一个输入句柄
+\ib # 生成头文件 use strict; use warnings;
+\it # $ =~ tr///xm
+\is # $ =~ s///xm
+\im # $ =~ m//xm
+\isu # subroutine
+```
+### \r 系列:run
+```
 \rs	检查语法错误
 \rr	运行程序
-\ib 生成头文件
+```
+
+### \c 系列:comments
+```
+\cfr #添加注释
+```
+
+所有的快捷键都在
+```
+vim/vimfiles/perl-support/doc/perl-hot-keys.pdf
 ```
