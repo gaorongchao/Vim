@@ -30,7 +30,7 @@
 
 use strict;
 use warnings;
-use utf8;
+use ;
 
 == Comments.file description pm == map:chpm, sc:d, start, noindent ==
 #

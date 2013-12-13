@@ -13,7 +13,9 @@
 * 2.1.1 修改/.vim/perl-support/templates/idioms.templates
 * 2.2
 * 3 修改2 \s系列
-* 4 常用perl-support快捷键总结
+* 4 修改 templates中的Templates
+* 5 
+* 常用perl-support快捷键总结
 
 ## 1 修改规则
 <CURSOR>：代表，使用hot keys以后光标所在的位置。
@@ -85,7 +87,23 @@ use 5.16.3;
 在hot keys 中对应的Statements,对应的是statements.templates 这里的修改纯属个人的编程习惯。
 我喜欢大括号单独占一行。在这个文件里修改就可以了。
 
-## 4 常用perl-support快捷键总结
+## 4 Templates 的修改
+默认的Templates中含有很多不必要的文件，比如说你的一些信息，当你用命令行生成一个新的perl文件的时候，会在开头生成很多的内容，这部分内容其实没有必要，所以
+我们在这里删除。有兴趣的可以进行对比。
+
+## 6 comments.templates 文件的修改
+这个文件是控制**注释**的，其中有一项
+```
+== Comments.file description pl == map:chpl, sc:d, start, noindent ==
+```
+这一行控制的是当我们用命令行生成一个新的perl程序的时候，自动在开头为
+程序添加注释。这部分我们也是认为是没有用的，所以我们进行删除。当然你也可以
+自己进行修改以及保留，这里我们还删除了一下一行。
+```
+use utf8
+```
+
+##  常用perl-support快捷键总结
 这里面的快捷键都上百了，是在记忆有限，所以还是找了几个常用的，记录下来， 作为参考
 ```
 \cfr	添加注释
@@ -93,4 +111,5 @@ use 5.16.3;
 \io \ii	open
 \rs	检查语法错误
 \rr	运行程序
+\ib 生成头文件
 ```
