@@ -32,4 +32,14 @@ thing = 2
 ### 使用方法
 这个非常简单，你输入以后会自动补全。类似VS中的功能。
 
+## 关于学习手册
+* Vim用户手册中文版
+* Vi Improved.pdf
+* vim-101-hacks.pdf
+* Hacking vim.pdf
+* 学习vi和vim编辑器\_中文版\_第7版.pdf
+* Practical Vim Edit:at the Speed of Thought.pdf
 
+所有上面的文件都可以在百度云:
+http://pan.baidu.com/s/1xjpH7
+如果文件因为内容没有审核通过，可以发邮件来索取。
