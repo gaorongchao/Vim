@@ -38,12 +38,10 @@ while(my $line=<$|FILEPOINTER|>)
 		chomp $line;
 }
 close  $|FILEPOINTER|;
-
 == Idioms.open output file == map:io, sc:o ==
 my	$|?FILEPOINTER|_out = "<CURSOR>";
 open  my $|FILEPOINTER|, '>', $|FILEPOINTER|_out or die  "Fail open $|FILEPOINTER|_out\n";
 close  $|FILEPOINTER|;
-
 == Idioms.open pipe == map:ipi, sc:p ==
 my	$|?PIPE|_command = " |<CURSOR> ";
 open  my $|PIPE|, $|PIPE|_command
