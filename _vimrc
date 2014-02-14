@@ -1,12 +1,12 @@
 "========================================================================
 " by GRC
 " Email:rongchaogao@gmail.com
-"	ä½ å¯ä»¥ä¸‹è½½æœ€æ–°çš„ä¿®æ”¹ git clone git@github.com:gaorongchao/vim.git
+"	Äã¿ÉÒÔÏÂÔØ×îĞÂµÄĞŞ¸Ä git clone git@github.com:gaorongchao/vim.git
 "========================================================================
 
 
 " turn off nice effect on status bar title
-" å…³é—­ä¸€äº›ç¾åŒ–çš„æ•ˆæœï¼Œå¦‚æœæƒ³æ”¹å›æ¥ï¼Œ
+" ¹Ø±ÕÒ»Ğ©ÃÀ»¯µÄĞ§¹û£¬Èç¹ûÏë¸Ä»ØÀ´£¬
 " let performance_moed=0
 let performance_mode=1
 
@@ -16,6 +16,9 @@ let performance_mode=1
 "Get out of VI's compatible mode..
 
 set nocompatible
+let LANG = 'en' "set messeage language
+set langmenu=en "set menu's language of gvim.
+
 syntax enable
 
 function! MySys()
@@ -29,7 +32,7 @@ function! MySys()
 endfunction
 
 "==============================================================
-"åœ¨unix å’Œmacç³»ç»Ÿä¸‹è®¾ç½®shellä¸ºhash
+"ÔÚunix ºÍmacÏµÍ³ÏÂÉèÖÃshellÎªhash
 "Set shell to be bash
 if MySys() == "unix" || MySys() == "mac"
 	set shell=bash
@@ -40,7 +43,7 @@ endif
 "==============================================================
 
 "==============================================================
-"è®¾ç½®è®°å½•çš„æ¬¡æ•°
+"ÉèÖÃ¼ÇÂ¼µÄ´ÎÊı
 "Sets how many lines of history VIM har to remember
 set history=400
 "==============================================================
@@ -97,12 +100,12 @@ if has("multi_byte")
   " CJK environment detection and corresponding setting 
   if v:lang =~ "^zh_CN" 
     " Use cp936 to support GBK, euc-cn == gb2312 
-		set encoding=cp936 
+		"set encoding=cp936 
+		set encoding=utf-8
     set termencoding=cp936 
-    set fileencoding=cp936 
-		"set encoding=utf-8
-    "set termencoding=utf-8
-    "set fileencoding=utf-8
+    set termencoding=utf-8
+    "set fileencoding=cp936 
+    set fileencoding=utf-8
   elseif v:lang =~ "^zh_TW" 
     " cp950, big5 or euc-tw 
     " Are they equal to each other? 
@@ -142,7 +145,7 @@ if has("gui_running")
 	set guioptions-=r
 	set guioptions-=R
 
-"	å½“ç³»ç»Ÿä¸ºwinæ—¶ï¼Œå¼€å¯çª—å£æœ€å¤§åŒ–
+"	µ±ÏµÍ³ÎªwinÊ±£¬¿ªÆô´°¿Ú×î´ó»¯
 	if MySys()=="win32"
 		"start gvim maximized
 		if has("autocmd")
@@ -197,14 +200,14 @@ set so=7
 "Turn on WiLd menu
 set wildmenu
 
-"æ˜¾ç¤ºæ ‡å°º
+"ÏÔÊ¾±ê³ß
 "Always show current position
 set ruler
 
 "The commandbar is 2 high
 set cmdheight=2
 
-"æ˜¾ç¤ºè¡Œå·
+"ÏÔÊ¾ĞĞºÅ
 "Show line number
 set nu
 
@@ -759,7 +762,7 @@ inoremap [ []<ESC>i
 inoremap { {}<ESC>i
 inoremap < <><ESC>i
 
-"è‡ªåŠ¨
+"×Ô¶¯
 "Only do this part when compiled with support for autocommands.
 if has("autocmd")
     filetype plugin indent on
@@ -770,10 +773,10 @@ endif "has("autocmd")
 
 
 :set foldmethod=indent
-"åªèƒ½é€‰æ‹©ä¸€ä¸ªï¼Œä¸Šé¢çš„æ˜¯ç”¨{}æ¥æŠ˜å ï¼Œzcæ˜¯æŠ˜å ï¼Œzoæ˜¯å±•å¼€
+"Ö»ÄÜÑ¡ÔñÒ»¸ö£¬ÉÏÃæµÄÊÇÓÃ{}À´ÕÛµş£¬zcÊÇÕÛµş£¬zoÊÇÕ¹¿ª
 ":set foldmethod=marker
 
-" è®¾ç½®TList
+" ÉèÖÃTList
 let Tlist_Use_LEFT_Window=1
 let Tlist_File_Fold_Auto_Close=1
 let Tlist_Show_One_File=1
@@ -806,11 +809,11 @@ function! s:align()
     endif
 endfunction
 
-" ä½¿bellåœæ­¢
+" Ê¹bellÍ£Ö¹
 set noeb vb t_vb=
 
 "========================================================================
-"phpç¼©è¿›
+"phpËõ½ø
 let PHP_autoformatcomment=1
 "========================================================================
 "
