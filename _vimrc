@@ -16,7 +16,7 @@ let performance_mode=1
 "Get out of VI's compatible mode..
 
 set nocompatible
-let LANG = 'en' "set messeage language
+let $LANG = 'en' "set messeage language
 set langmenu=en "set menu's language of gvim.
 
 syntax enable
@@ -102,7 +102,7 @@ if has("multi_byte")
     " Use cp936 to support GBK, euc-cn == gb2312 
 		"set encoding=cp936 
 		set encoding=utf-8
-    set termencoding=cp936 
+    "set termencoding=cp936 
     set termencoding=utf-8
     "set fileencoding=cp936 
     set fileencoding=utf-8
