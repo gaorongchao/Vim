@@ -61,4 +61,5 @@ or warn "$0 : failed to close pipe '$|PIPE|_command' : $!\n";
 == Idioms.begin == map:ib, sc:b, insert ==
 use strict;
 use warnings;
+use utf8;
 use 5.16.3;
