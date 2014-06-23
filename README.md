@@ -8,7 +8,7 @@ O这是一个集合我vim配置和插件配置的项目
 ## 2：perl-support
 在原作者的基础上做一定的改动，以方便使用。
 ## Tabular
-网址：http://www.vim.org/scripts/script.php?script_id=3464
+网址："http://www.vim.org/scripts/script.php?script\_id=3464
 ### 安装方法
 把解压得到的文件godlygeek-tabular-1835018文件中的内容，直接复制到vimfiles里面。
 ### 使用方法
@@ -40,18 +40,23 @@ Nerd tree 可以让你浏览文件系统并打开文件或目录。
 在vmrc选中添加下面一行
 nnoremap <silent> <F5> :NERDTree<CR>
 ### 使用方法简介
+```
 :NERDTree [|] # 打开一个Nerdtree,根节点由参数指定，不指定参数就是以当前目录为根节点
               # 也可以在文件和tree之间切换
 :NERDTreeClose # 在当前Tab中关闭tree
-o # 在已有的窗口中打开文件、目录，或书签
-t #在某个文件上按t，在标签页打开，并跳转到标签页
-T # 在后台标签页打开，不跳转过去
-p # 到上层目录
-P # 根目录
-u # 打开上层目录
-m # 显示文件系统菜单（添加、删除、移动操作）
-q # 在文件树中的时候，按q可以退出文件树
-
+o  # 在已有的窗口中打开文件、目录，或书签
+go # 在已有窗口 中打开文件、目录或书签，但不跳到该窗口 |NERDTree-go|
+t  # 在某个文件上按t，在标签页打开，并跳转到标签页
+T  # 在后台标签页打开，不跳转过去
+i  # split 一个新窗口打开选中文件，并跳到该窗口
+gi # split一个新窗口打开选中文件，但不跳到该窗口
+p  # 到上层目录
+P  # 根目录
+u  # 打开上层目录
+m  # 显示文件系统菜单（添加、删除、移动操作）
+q  # 在文件树中的时候，按q可以退出文件树
+```
+帮助文档在vimfiles/doc/NERD_tree.txt
 
 ## 关于学习手册
 * Vim用户手册中文版
