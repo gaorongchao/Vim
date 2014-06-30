@@ -2,13 +2,13 @@
 §  User Macros
 § ==========================================================
 
-SetMacro( 'AUTHOR',      'YOUR NAME' )
-SetMacro( 'AUTHORREF',   '' )
-SetMacro( 'COMPANY',     '' )
-SetMacro( 'COPYRIGHT',   '' )
-SetMacro( 'EMAIL',       '' )
-SetMacro( 'LICENSE',     '' )
-SetMacro( 'ORGANIZATION','' )
+SetMacro( 'AUTHOR',      'GRCE' )
+SetMacro( 'AUTHORREF',   'GRC' )
+SetMacro( 'COMPANY',     'GRC' )
+SetMacro( 'COPYRIGHT',   'GRC' )
+SetMacro( 'EMAIL',       'rongchaogao@gmail.com' )
+SetMacro( 'LICENSE',     'GRC' )
+SetMacro( 'ORGANIZATION','GRC' )
 
 SetStyle( 'C' )
 
