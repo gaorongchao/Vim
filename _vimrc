@@ -96,7 +96,7 @@ endif
 "I only work in Win2k Chinese version
 if has("multi_byte")
 	"set bomb 
-  set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,euc-kr,latin1 
+  set fileencodings=utf-8,ucs-bom,cp936,big5,euc-jp,euc-kr,latin1 
   " CJK environment detection and corresponding setting 
   if v:lang =~ "^zh_CN" 
     " Use cp936 to support GBK, euc-cn == gb2312 
