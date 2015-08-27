@@ -843,3 +843,4 @@ let g:tex_flavor='latex'
 " NERDTree ¿ì½Ý¼ü°ó¶¨
 nnoremap <silent> <F5> :NERDTree<CR>
 
+autocmd VimEnter * NERDTree
