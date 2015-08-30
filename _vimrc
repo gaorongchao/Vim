@@ -844,3 +844,8 @@ let g:tex_flavor='latex'
 nnoremap <silent> <F5> :NERDTree<CR>
 
 autocmd VimEnter * NERDTree
+
+" 第一行为设置启动位置；
+" 第二行为设置窗口大小，行X列；
+winpos 1200 50
+set lines =400 columns =110 
